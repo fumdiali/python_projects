@@ -1,4 +1,5 @@
 #another guessing game in python3
+# this is the poorly commented version..apologies
 import random
 
 
@@ -10,12 +11,12 @@ print()
 found = False
 attempt = 0
 minNum = 1
-maxNum = 37
+maxNum = 30
 magicNum = random.randint(minNum,maxNum)
 
 name = input("Choose a user name: ")
 print("Welcome {}.Let's begin..".format(name))
-print("I'm thinking of a number between 1 - 37..")
+print("I'm thinking of a number between 1 and 30..")
 print("Take 3 guesses of what my number is: ")
 
 while not found and attempt < 3:
@@ -27,6 +28,7 @@ while not found and attempt < 3:
             print("That's correct!")
             print("You got it in {} tries!".format(attempt))
             print("Thanks for playing")
+            break
         if attempt == 3:
             print("You're out of tries!")
             print("The number is {}".format(magicNum))
