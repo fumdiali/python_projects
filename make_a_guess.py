@@ -25,16 +25,25 @@ while not found and attempt < 3:
         if guess == magicNum:
             found = True
             print("That's correct!")
+            print("You got it in {} tries!".format(attempt))
             print("Thanks for playing")
         if attempt == 3:
             print("You're out of tries!")
             print("The number is {}".format(magicNum))
         elif guess < magicNum:
-            print("Nope!Too low!Try again..")
+            if attempt == 2:
+                print("Too low!You have one more guess..")
+            else:
+                print("Nope!Too low!Try again..")
+        #elif guess < magicNum:
+           # print("Nope!Too low!Try again..")
         elif guess > magicNum:
-            print("Aargh!Too much!!Try again..")
+            if attempt == 2:
+                print("Aaargh!Too high!You have one more guess..")
+            else:
+                print("Too high!Try again..") #print("Aargh!Too much!!Try again..")
         else:
-            print("You got it in {} tries!".format(attempt))
+            print("Oops!Something is very wrong!")
     except ValueError:
         print("Please,enter a number!")
 
