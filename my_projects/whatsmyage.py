@@ -31,3 +31,14 @@ while my_age != 39:
         print("Invalid input")
 
 print("Thanks for playing.Goodbye,"+name)
+
+
+#print("*-*-*-*-*-*-*-*-*-*-")
+
+#print("Now,let's try one more thing..")
+#pick = input("Pick a number between 1 & 2:")
+#if type(pick) == 1 or 2:
+ #   print("Well done!You chose {}".format(pick))
+#else:
+ #   print("What have you just done???I said a NUMBER!")
+
