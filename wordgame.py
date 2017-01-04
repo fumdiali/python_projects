@@ -1,10 +1,10 @@
 import random #to enable us generate random words
 import time # for pause and effect
 
-print("Welcome to WordGame!")
-print("********************")
-print("Created by Chukwufumn'anya P. Diali")
-print("August,2016")
+print('''    Welcome to WordGame!
+         ********************
+      Created by Chukwufumn'anya P. Diali
+                August,2016''')
 print()
 
 
